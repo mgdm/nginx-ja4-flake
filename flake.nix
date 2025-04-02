@@ -39,8 +39,7 @@
         });
 
         nginx-ja4 = (pkgs.nginxStable.overrideAttrs (drv: {
-          patches = (drv.patches or [ ])
-            ++ [ "${nginx-ja4-module.src}/patches/nginx.patch" ];
+          patches = (drv.patches or [ ]) ++ [ "${nginx-ja4-module.src}/patches/nginx.patch" ];
           configureFlags = drv.configureFlags ++ [ "--add-module=${nginx-ja4-module.src}/src" ];
         })).override { openssl = openssl-ja4; };
 
