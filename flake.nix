@@ -16,7 +16,7 @@
             owner = "FoxIO-LLC";
             repo = "ja4-nginx-module";
             rev = "90a93a15fc92de5a5ceb0f67c58c337c7b8b9cb0";
-            sha256 = "sha256-Q15kgM9eobetBhFyF2TgfXi+HB1jBs565FiVyRIeK+Y=";
+            sha256 = "sha256-g8BEfhBmiTP2y8WvylxKeICrfhdxNIbEUIUUcw0jViE="";
           }; in
             pkgs.runCommand "ja4-nginx-module" { } ''
               cp -a ${src'} $out
