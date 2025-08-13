@@ -15,8 +15,8 @@
           src = let src' = pkgs.fetchFromGitHub {
             owner = "FoxIO-LLC";
             repo = "ja4-nginx-module";
-            rev = "892cc6e1d54bf468d61fb3d79968ef73093b0871";
-            sha256 = "sha256-Q15kgM9eobetBhFyF2TgfXi+HB1jBs565FiVyRIeK+Y=";
+            rev = "ad8d7fba6d5d7043c760639e5d95f174a3d8c88e";
+            sha256 = "sha256-LZ+7n2Qy2d+Bg2bApI+235LH8P5oerZNrOcoeSQymTA=";
           }; in
             pkgs.runCommand "ja4-nginx-module" { } ''
               cp -a ${src'} $out
